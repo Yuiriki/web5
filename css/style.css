@@ -1,0 +1,132 @@
+#wrap{width: 1200px; margin: 0 auto;}
+
+
+#wrap #header{width: 100%;height: 100px;display: flex;position: relative; z-index: 3;}
+#wrap #header .left{width: 200px;height: 100%;background:url(../img/logo.webp) 50% 50% no-repeat}
+#wrap #header .right{width: 1000px;height: 100%;background-color: bisque;}
+#wrap #header .right #nav{ width: 700px;height: 50px; margin: 25px 25px 25px auto;}
+#wrap #header .right #nav >ul{width: 100%; display: flex;}
+#wrap #header .right #nav >ul >li{width:25%;}
+#wrap #header .right #nav >ul >li >a{display: block; text-align: center;line-height: 50px;background-color: #ffffff; color: #888888;}
+#wrap #header .right #nav >ul >li >a.on{background-color: #4A4948;}
+#wrap #header .right #nav >ul >li > .sub{width: 100%;background-color: #ffffff; display: none;}
+#wrap #header .right #nav >ul >li > .sub ul{width: 100%;}
+#wrap #header .right #nav >ul >li > .sub ul li{width: 100%;}
+#wrap #header .right #nav >ul >li > .sub ul li a{display: block;width: 100%;color: #888888; background-color: #ffffff; text-align: center; line-height: 30px;}
+#wrap #header .right #nav >ul >li > .sub ul li a:hover{background-color: #CAAC7D;}
+
+#wrap #main{width: 100%;position: relative; z-index: 1;}
+#wrap #main .section1{ width: 100%;height: 300px;}
+#wrap #main .section1 .slide-container{width: 100%;position: relative;}
+#wrap #main .section1 .slide-container .slide-view{width: 100%;position: relative;overflow: hidden;}
+#wrap #main .section1 .slide-container .slide-view .slide-wrap{position: relative; width: 500%; display: flex; margin-left: -100%;}
+#wrap #main .section1 .slide-container .slide-view .slide-wrap .slide{width: 100%; height: 300px; background: url() 50% 50% no-repeat;background-size: cover;}
+#wrap #main .section1 .slide-container .slide-view .slide-wrap .slide1{background-image: url(../img/wedding-img10.jpg);}
+#wrap #main .section1 .slide-container .slide-view .slide-wrap .slide2{background-image: url(../img/wedding-img14.jpg);}
+#wrap #main .section1 .slide-container .slide-view .slide-wrap .slide3{background-image: url(../img/wedding-img12.jpg);}
+
+
+
+
+#wrap #main .section2{width: 100%; height: 200px;display: flex;}
+#wrap #main .section2 .left{width: 33.333%; height: 100%;}
+#wrap #main .section2 .left .gap{height: 100%;position: relative;padding: 36px 0 0 0;}
+#wrap #main .section2 .left .gap button{
+    height: 35px; 
+    width: 100px; 
+    border: 1px solid #888888;
+    position: absolute;
+    border-bottom:none ;
+    color: #888888;
+    top:2px;
+    border-radius: 10px 10px 0 0;
+}
+#wrap #main .section2 .left .gap button.notice-btn{background: #fff; left:10px;z-index: 3;}
+#wrap #main .section2 .left .gap button.notice-btn.on{background: #e0e0e0;z-index: 1;}
+#wrap #main .section2 .left .gap button.gallery-btn{background: #e0e0e0; left:110px;z-index: 1;}
+#wrap #main .section2 .left .gap button.gallery-btn.on{background: #fff;z-index: 3;}
+#wrap #main .section2 .left .gap .notice{background: #fff; width: 100%;height: 164px; border: 1px solid #888888;position: relative;z-index: 2;}
+#wrap #main .section2 .left .gap .notice.on{display: none;}
+#wrap #main .section2 .left .gap .notice ul {width: 100%; padding : 15px 10px;}
+#wrap #main .section2 .left .gap .notice ul li{
+    width: 100%; line-height: 33px;
+    border-bottom: 1px solid #333;
+    padding: 0 100px 0 10px;
+    position: relative;
+}
+#wrap #main .section2 .left .gap .notice ul li a{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #888888;
+    padding-left: 10px;
+    position: relative;
+    margin: 0 auto 0 0;
+    width: 100%;
+}
+#wrap #main .section2 .left .gap .notice ul li a:hover{color: black;}
+#wrap #main .section2 .left .gap .notice ul li a:before{
+    content: ''; display:inline-block;
+    width: 3px; height: 3px;
+    background: #333;
+    border-radius: 3px;
+    position:absolute;left: 0;top: 50%;margin-top: -2px; 
+}
+#wrap #main .section2 .left .gap .notice ul li span{
+    color: #888888; 
+    display: inline-block;
+    margin: 0 0 0 auto; 
+    position: absolute; right: 0;top: 0;
+}
+#wrap #main .section2 .left .gap .gallery{background: #fff; width: 100%;height: 164px;border: 1px solid #888888; position: relative; display: none;z-index: 2;}
+#wrap #main .section2 .left .gap .gallery.on{display: block;}
+#wrap #main .section2 .left .gap .gallery .gallery-gap{padding: 15px 5px; height: 100%;}
+#wrap #main .section2 .left .gap .gallery .gallery-gap ul{width: 100%;height: 100%; display: flex;}
+#wrap #main .section2 .left .gap .gallery .gallery-gap ul li{width: 33.333%; height: 100%;}
+#wrap #main .section2 .left .gap .gallery .gallery-gap ul li .img-gap{padding: 0 5px;width: 100%;height:100%;}
+#wrap #main .section2 .left .gap .gallery .gallery-gap ul li .img-gap .img-bg{
+    width: 100%;
+    height: 100%; 
+    background: url() 50% 50% no-repeat;
+    background-size: cover;
+}
+#wrap #main .section2 .left .gap .gallery .gallery-gap ul li:nth-child(1) .img-gap .img-bg{background-image: url(../img/genesis-kr-admin-model-list-thumbnail-g90-desktop-630x240-ko.webp);}
+#wrap #main .section2 .left .gap .gallery .gallery-gap ul li:nth-child(2) .img-gap .img-bg{background-image: url(../img/genesis-kr-admin-model-list-thumbnail-gv60-desktop-630x240-ko.webp);}
+#wrap #main .section2 .left .gap .gallery .gallery-gap ul li:nth-child(3) .img-gap .img-bg{background-image: url(../img/genesis-kr-admin-model-list-thumbnail-gv80-desktop-630x240-ko.webp);}
+
+#wrap #main .section2 .center{width: 33.333%;height: 100%;}
+#wrap #main .section2 .right{width: 33.333%; height: 100%;}
+
+
+
+#wrap #footer{width: 100%;height: 100px;display: flex;position: relative; z-index: 2;}
+#wrap #footer .left{width: 200px;height: 100%;background: url(../img/logo.webp) 50% 50% no-repeat;}
+#wrap #footer .center{width: 800px;height: 100%;}
+#wrap #footer .right{width: 200px;height: 100%;}
+
+#wrap #modal{position: fixed;top:0;left:0; height: 100%;width: 100%;background: rgba(0,0,0,.3); z-index: 4; display: none;}
+#wrap #modal .container{width: 800px;height: 650px;position: relative; background-color: #ffffff; margin: auto;top: 50%; margin-top: -325px;}
+#wrap #modal .container ul{width: 100%;padding: 30px 30px 20px 30px;}
+#wrap #modal .container ul li{width: 100%; display: flex; line-height: 40px;border-bottom: 1px solid #888888;}
+#wrap #modal .container ul li:first-child{line-height: 70px; border-top: 2px solid #888888;}
+#wrap #modal .container ul li h1{padding-left: 10px; font-size: 20px; width: 100%;font-weight: 600; line-height: 50px;color: black;background-color:#f4f4f4 ;}
+#wrap #modal .container ul li span{display: block;font-size: 16px;}
+#wrap #modal .container ul li span:nth-child(1){width: 15%;color: #333; background-color:#f4f4f4; text-align: center  ;}
+#wrap #modal .container ul li span:nth-child(2){width: 85%;padding-left: 10px;}
+#wrap #modal .container ul li:nth-child(5) {display: block;}
+#wrap #modal .container ul li  .contents {text-align: center; padding: 20px 0 30px 0;}
+#wrap #modal .container ul li  .contents h2{ font-size: 16px; color: #333;}
+#wrap #modal .container ul li  .contents .img-box{padding: 10px 0 0 0;}
+#wrap #modal .container ul li  .contents .img-box img{width: 450px;}
+#wrap #modal .container ul li:last-child{border-bottom: 2px solid #888888; padding:3px 0 0 0;}
+#wrap #modal .container .button-box{padding: 0 30px 30px 0;text-align: right;}
+#wrap #modal .container .button-box .close-btn{width: 80px; height: 30px; cursor: pointer;}
+#wrap #modal .container .button-box .close-btn:hover{background-color:#888888;}
+
+
+
+
+
+
+
